@@ -22,7 +22,7 @@ module.exports = function(environment) {
       accessToken: 'pk.eyJ1IjoiaGFubmFoa2F0ZXMiLCJhIjoiY2o0b2hmbWl1MGJiNDJxcTYzdTh6OWxwaCJ9._hRXI0U3a8pLLqz-U3KuOA',
       map: {
         style: 'mapbox://styles/mapbox/dark-v9',
-        zoom: 10,
+        zoom: 12.5,
         center: [ -73.958562, 40.721423 ]
       }
     },

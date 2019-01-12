@@ -3,8 +3,11 @@
 {{#mapbox-gl class="map-container" initOptions=(hash pitch=0) as |map|}}
   {{#map.source options=(hash type="geojson" data=model) as |source|}}
     {{source.layer layer=(hash
+      type="fill"
+      paint=(hash fill-color="#1F5EBE" fill-opacity=0.75))}}
+    {{source.layer layer=(hash
       type="line"
-      paint=(hash line-color="#007cbf" line-width=3))}}
+      paint=(hash line-color="#007cbf" line-width=1))}}
   {{/map.source}}
 {{/mapbox-gl}}
 
