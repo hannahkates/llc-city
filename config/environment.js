@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function(environment) {
+
   let ENV = {
     modulePrefix: 'llc-city',
     environment,
@@ -14,6 +15,15 @@ module.exports = function(environment) {
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
+      }
+    },
+
+    'mapbox-gl': {
+      accessToken: 'pk.eyJ1IjoiaGFubmFoa2F0ZXMiLCJhIjoiY2o0b2hmbWl1MGJiNDJxcTYzdTh6OWxwaCJ9._hRXI0U3a8pLLqz-U3KuOA',
+      map: {
+        style: 'mapbox://styles/mapbox/dark-v9',
+        zoom: 10,
+        center: [ -73.958562, 40.721423 ]
       }
     },
 
